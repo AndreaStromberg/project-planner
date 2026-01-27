@@ -5,10 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Planner</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-gray-900 text-white">
+<body class="bg-gray-900 text-white font-inter">
 
     <div class="app container mx-auto my-32 max-w-4xl px-8">
 
@@ -17,36 +26,49 @@
         <!-- Formulär -->
         <div class="form">
 
-            <form action="">
+            <form action="" class="grid gap-6 grid-cols-2">
 
                 <!-- Rad 1 -->
-                <div>
-                    <div>
-                        <label for="created by">Project creator</label>
-                        <input type="text" id="created by" value="Skrutte Kanin">
+                <div class="col-span-full">
+                    <div class="flex flex-col">
+                        <label class="text-sm font-medium mb-2" for="created by">Project creator</label>
+                        <input
+                            class="block w-full outline-1 -outline-offset-1 outline-white/10 bg-white/5 rounded-sm py-1.5 px-3 placeholder:text-gray-500 text-sm"
+                            type="text" id="created by" value="Skrutte Kanin">
                     </div>
                 </div>
 
                 <!-- Rad 2 -->
                 <div>
 
-                    <div>
-                        <label for="project-name">Project name</label>
-                        <input type="text" id="project-name" placeholder="Project name">
-                    </div>
-
-                    <div>
-                        <label for="project-due-date">Project Due Date</label>
-                        <input type="date" id="project-due-date">
+                    <div class="flex flex-col">
+                        <label class="text-sm font-medium mb-2" for="project-name">Project name</label>
+                        <input
+                            class="block w-full outline-1 -outline-offset-1 outline-white/10 bg-white/5 rounded-sm py-1.5 px-3 placeholder:text-gray-500 text-sm"
+                            type="text" id="project-name" placeholder="Project name">
                     </div>
 
                 </div>
 
                 <!-- Rad 3 -->
                 <div>
-                    <div>
-                        <label for="project-link">Project link</label>
-                        <input type="url" id="project-link" placeholder="https://">
+
+                    <div class="flex flex-col">
+                        <label class="text-sm font-medium mb-2" for="project-due-date">Project Due Date</label>
+                        <input
+                            class="block w-full outline-1 -outline-offset-1 outline-white/10 bg-white/5 rounded-sm py-1.5 px-3 placeholder:text-gray-500 text-sm"
+                            type="date" id="project-due-date">
+                    </div>
+
+                </div>
+
+                <!-- Rad 4 -->
+                <div class="col-span-full">
+                    <div class="flex flex-col">
+                        <label class="text-sm font-medium mb-2" for="project-link">Project link</label>
+                        <input
+                            class="block w-full outline-1 -outline-offset-1 outline-white/10 bg-white/5 rounded-sm py-1.5 px-3 placeholder:text-gray-500 text-sm"
+                            type="url" id="project-link" placeholder="https://">
                     </div>
                 </div>
 

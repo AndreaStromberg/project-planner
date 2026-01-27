@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+/* Kan skriva så här, och sedan skriva class="font-inter" på t.ex. body eller där man vill ha inter. 
+@theme {
+  --font-inter: "Inter", sans-serif;
+} */
+
+/* Eller så ersätter man default-teckensnittet så här */
+@theme {
+  --font-sans: "Inter", sans-serif;
+}
