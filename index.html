@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <div class="app container mx-auto my-32 max-w-4xl px-8">
+
+        <h1 class="text-2xl font-semibold">Project planner app</h1>
+
+        <!-- Formulär -->
+        <div class="form">
+
+            <form action="">
+
+                <!-- Rad 1 -->
+                <div>
+                    <div>
+                        <label for="created by">Project creator</label>
+                        <input type="text" id="created by" value="Skrutte Kanin">
+                    </div>
+                </div>
+
+                <!-- Rad 2 -->
+                <div>
+
+                    <div>
+                        <label for="project-name">Project name</label>
+                        <input type="text" id="project-name" placeholder="Project name">
+                    </div>
+
+                    <div>
+                        <label for="project-due-date">Project Due Date</label>
+                        <input type="date" id="project-due-date">
+                    </div>
+
+                </div>
+
+                <!-- Rad 3 -->
+                <div>
+                    <div>
+                        <label for="project-link">Project link</label>
+                        <input type="url" id="project-link" placeholder="https://">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- Projekt -->
+        <div class="projects"></div>
+
+    </div>
+
+
+</body>
+
+</html>
