@@ -15,25 +15,28 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- js -->
+    <script src="src/app.js" defer></script>
 </head>
 
 <body class="bg-gray-900 text-white font-inter">
 
     <div class="app container mx-auto my-32 max-w-4xl px-8">
 
-        <h1 class="text-2xl font-semibold">Project planner app</h1>
+        <h1 class="text-2xl font-semibold mb-12">Project planner app</h1>
 
         <!-- Formulär -->
         <div class="form">
 
-            <form action="" class="grid gap-6 grid-cols-2">
+            <form id="project-form" class="grid gap-6 grid-cols-2">
 
                 <!-- Rad 1 -->
                 <div class="col-span-full">
                     <div class="flex flex-col">
-                        <label class="text-sm font-medium mb-2" for="created by">Project creator</label>
-                        <input
-                            class="block w-full outline-1 -outline-offset-1 outline-white/10 bg-white/5 rounded-sm py-1.5 px-3 placeholder:text-gray-500 text-sm"
+                        <label class="text-sm font-medium mb-2" for="created-by">Project creator</label>
+                        <input itemid="created-by" name="created-by"
+                            class="block w-full outline-1 -outline-offset-1 outline-white/10 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-400 bg-white/5 rounded-sm py-1.5 px-3 placeholder:text-gray-500 text-sm"
                             type="text" id="created by" value="Skrutte Kanin">
                     </div>
                 </div>
@@ -43,8 +46,8 @@
 
                     <div class="flex flex-col">
                         <label class="text-sm font-medium mb-2" for="project-name">Project name</label>
-                        <input
-                            class="block w-full outline-1 -outline-offset-1 outline-white/10 bg-white/5 rounded-sm py-1.5 px-3 placeholder:text-gray-500 text-sm"
+                        <input id="project-name" name="project-name"
+                            class="block w-full outline-1 -outline-offset-1 outline-white/10 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-400 bg-white/5 rounded-sm py-1.5 px-3 placeholder:text-gray-500 text-sm"
                             type="text" id="project-name" placeholder="Project name">
                     </div>
 
@@ -55,8 +58,8 @@
 
                     <div class="flex flex-col">
                         <label class="text-sm font-medium mb-2" for="project-due-date">Project Due Date</label>
-                        <input
-                            class="block w-full outline-1 -outline-offset-1 outline-white/10 bg-white/5 rounded-sm py-1.5 px-3 placeholder:text-gray-500 text-sm"
+                        <input id="project-due-date" name="project-due-date"
+                            class="block w-full outline-1 -outline-offset-1 outline-white/10 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-400 bg-white/5 rounded-sm py-1.5 px-3 placeholder:text-gray-500 text-sm"
                             type="date" id="project-due-date">
                     </div>
 
@@ -66,17 +69,34 @@
                 <div class="col-span-full">
                     <div class="flex flex-col">
                         <label class="text-sm font-medium mb-2" for="project-link">Project link</label>
-                        <input
-                            class="block w-full outline-1 -outline-offset-1 outline-white/10 bg-white/5 rounded-sm py-1.5 px-3 placeholder:text-gray-500 text-sm"
+                        <input id="project-link" name="project-link"
+                            class="block w-full outline-1 -outline-offset-1 outline-white/10 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-400 bg-white/5 rounded-sm py-1.5 px-3 placeholder:text-gray-500 text-sm"
                             type="url" id="project-link" placeholder="https://">
                     </div>
+                </div>
+
+                <!-- Rad 5 -->
+                <div class="col-span-full pt-2">
+                    <button class="text-sm bg-green-600 py-1.5 px-3 rounded-sm hover:bg-green-700 cursor-pointer">Create
+                        project</button>
                 </div>
 
             </form>
         </div>
 
-        <!-- Projekt -->
-        <div class="projects"></div>
+        <!-- AVDELNING MED PROJEKT -->
+        <div class="projects mt-16">
+
+            <!-- Lista med projekt  -->
+            <ul id="project-list" class="flex flex-col">
+
+                <!-- projekt  -->
+
+
+            </ul>
+
+
+        </div>
 
     </div>
 
